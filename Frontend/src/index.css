@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply bg-white; 
+  }
+  
+  body {
+    @apply bg-white text-dark leading-relaxed font-sans; 
+    
+    min-height: 100vh;
+    margin: 0; 
+  }
+}
+
+@layer components {
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"],
+  textarea {
+    @apply w-full border border-gray-200 bg-white rounded-xl p-4 text-dark placeholder-gray-400 shadow-sm focus:border-primary focus:ring-1 focus:ring-primary transition duration-200;
+  }
+}
